@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>願いの詰まりをほどく 交換ノート鑑定</title>
+  <meta name="description" content="頭の願いと、心の奥の防衛。その二つの声を文章とカードで読み、次の一手に編集する、顔出し・通話なしの個別鑑定です。">
+  <link rel="canonical" href="https://panda69nnn-art.github.io/exchange-note/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="願いの詰まりをほどく 交換ノート鑑定">
+  <meta property="og:description" content="顔出し・通話なし。文章とカードで、自分の中の二つの声を読み直す往復書簡です。">
+  <meta property="og:url" content="https://panda69nnn-art.github.io/exchange-note/">
+  <meta property="og:image" content="https://panda69nnn-art.github.io/exchange-note/assets/og-exchange-note.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="願いの詰まりをほどく 交換ノート鑑定">
+  <meta name="twitter:description" content="顔出し・通話なし。文章で、自分の声に戻る。">
+  <meta name="twitter:image" content="https://panda69nnn-art.github.io/exchange-note/assets/og-exchange-note.png">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --ink: #1c2927;
+      --muted: #5d6965;
+      --paper: #f6f4ee;
+      --white: #fffef9;
+      --mist: #dfe8e3;
+      --deep: #193b37;
+      --blue: #315c72;
+      --rose: #9d514d;
+      --gold: #b68a3d;
+      --line: rgba(28, 41, 39, .17);
+      --shadow: 0 18px 55px rgba(18, 38, 35, .13);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button,
+    a { font: inherit; }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      position: relative;
+      align-items: center;
+      overflow: hidden;
+      background: #e6e0d5 url("assets/hero-meaning-map.png") center / cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(246, 244, 238, .4);
+    }
+
+    .hero-inner {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+      position: relative;
+      padding: 76px 0 116px;
+    }
+
+    .hero-copy {
+      max-width: 710px;
+      padding-left: 26px;
+      border-left: 5px solid var(--rose);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--rose);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    h1,
+    h2,
+    h3,
+    p { overflow-wrap: anywhere; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    h1 span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 24px 0 0;
+      color: #31413d;
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.8;
+      font-weight: 560;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border: 1px solid var(--deep);
+      border-radius: 8px;
+      background: var(--deep);
+      color: var(--white);
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--deep);
+    }
+
+    .next-hint {
+      position: absolute;
+      bottom: 26px;
+      left: 0;
+      padding: 9px 12px;
+      background: rgba(28, 41, 39, .84);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    section {
+      padding: 76px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      max-width: 820px;
+      font-size: clamp(28px, 4.2vw, 48px);
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.4;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .muted { color: var(--muted); }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .large-copy {
+      color: var(--deep);
+      font-size: clamp(24px, 3.2vw, 38px);
+      line-height: 1.55;
+      font-weight: 880;
+    }
+
+    .dark-band {
+      border-top: 0;
+      background: var(--deep);
+      color: var(--white);
+    }
+
+    .dark-band .muted { color: rgba(255, 254, 249, .72); }
+
+    .voice-grid,
+    .deliver-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .voice,
+    .deliver {
+      min-height: 205px;
+      padding: 24px;
+      border: 1px solid rgba(255, 254, 249, .22);
+      border-radius: 8px;
+      background: rgba(255, 254, 249, .07);
+    }
+
+    .voice strong,
+    .deliver strong {
+      display: block;
+      margin-bottom: 15px;
+      color: #e8c47d;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .deliver-grid .deliver {
+      border-color: var(--line);
+      background: var(--white);
+    }
+
+    .deliver-grid .deliver strong { color: var(--rose); }
+
+    .offer-band { background: var(--mist); }
+
+    .offer-layout {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .price-panel,
+    .capacity-panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .price-label {
+      color: var(--rose);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .price {
+      margin: 9px 0 7px;
+      color: var(--blue);
+      font-size: clamp(44px, 6vw, 64px);
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .price small {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .capacity-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .capacity-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--line);
+      font-weight: 800;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+      counter-reset: steps;
+    }
+
+    .flow-step {
+      min-height: 165px;
+      padding-top: 15px;
+      border-top: 4px solid var(--gold);
+    }
+
+    .flow-step::before {
+      counter-increment: steps;
+      content: counter(steps, decimal-leading-zero);
+      display: block;
+      margin-bottom: 12px;
+      color: var(--rose);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .fit-list {
+      margin: 18px 0 0;
+      padding-left: 22px;
+      line-height: 1.9;
+    }
+
+    .apply {
+      background: #d9e1db;
+    }
+
+    .apply-layout {
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .keyword {
+      display: inline-flex;
+      margin-top: 15px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--rose);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .copy-status {
+      min-height: 24px;
+      margin-top: 9px;
+      color: var(--deep);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .note {
+      margin-top: 17px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    details {
+      margin-top: 18px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 11px 20px;
+      margin-top: 18px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .legal-grid dt { font-weight: 850; }
+    .legal-grid dd { margin: 0; color: var(--muted); }
+
+    footer {
+      padding: 26px 0 90px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .mobile-cta { display: none; }
+
+    @media (max-width: 820px) {
+      .hero {
+        min-height: 88vh;
+        align-items: end;
+        background-position: 67% center;
+      }
+
+      .hero::before { background: rgba(246, 244, 238, .58); }
+
+      .hero-inner { padding: 44px 0 100px; }
+
+      .hero-copy {
+        padding-left: 18px;
+        border-left-width: 4px;
+      }
+
+      h1 { font-size: 37px; }
+      h1 span:first-child { font-size: 32px; }
+
+      .intro,
+      .voice-grid,
+      .deliver-grid,
+      .offer-layout,
+      .flow,
+      .fit-grid,
+      .apply-layout {
+        grid-template-columns: 1fr;
+      }
+
+      section { padding: 60px 0; }
+
+      .voice,
+      .deliver,
+      .flow-step { min-height: auto; }
+
+      .next-hint { left: 0; }
+
+      .legal-grid { grid-template-columns: 1fr; gap: 4px; }
+      .legal-grid dd { margin-bottom: 9px; }
+
+      .mobile-cta {
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        z-index: 10;
+        display: flex;
+        min-height: 50px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 8px;
+        background: var(--deep);
+        box-shadow: 0 12px 30px rgba(14, 35, 32, .28);
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 900;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .wrap,
+      .hero-inner { width: min(100% - 28px, 1080px); }
+      h1 { font-size: 34px; }
+      h1 span:first-child { font-size: 30px; }
+      .lead { font-size: 16px; }
+      .capacity-row { align-items: flex-start; flex-direction: column; gap: 3px; }
+    }
+
+    @media (max-width: 340px) {
+      h1 span:first-child { font-size: 27px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">人生編集 × カード × ジャーナリング</p>
+        <h1><span>願いの詰まりをほどく</span><span>交換ノート鑑定</span></h1>
+        <p class="lead">頭では叶えたい。でも、心の奥では怖がっている。その二つの声を文章とカードで読み、今日から動ける言葉に編集します。顔出しも通話もありません。</p>
+        <div class="hero-meta">
+          <span>顔出し・通話なし</span>
+          <span>個別ノート3〜4ページ</span>
+          <span>文章で1往復付き</span>
+        </div>
+        <div class="actions">
+          <a class="button" href="#apply">募集内容を見る</a>
+          <a class="button secondary" href="#session">交換ノートの流れ</a>
+        </div>
+      </div>
+      <div class="next-hint">初回2枠 8,800円 / 次の7枠 13,200円</div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap intro">
+        <p class="large-copy">叶わない自分を責める前に、止まっている声にも理由があると考えてみる。</p>
+        <div>
+          <p>「もっと稼ぎたい」「この仕事をしたい」「あの人と向き合いたい」。願いはあるのに動けないとき、意志が弱いとは限りません。</p>
+          <p class="muted" style="margin-top:16px;">前へ進みたい声と、傷つかないように守りたい声。その両方を紙の上に出し、いまの自分が納得できる願いへ言い直します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="session" class="dark-band">
+      <div class="wrap">
+        <h2>うまく話せなくていい。まとまっていないまま、書いてください。</h2>
+        <p class="muted">届いた文章とカードを手がかりに、自分の中にある複数の声を読み分けます。</p>
+        <div class="voice-grid">
+          <article class="voice">
+            <strong>VOICE 01</strong>
+            <h3>あなたが書く</h3>
+            <p>いま叶えたいこと、実際に起きていること、動くときの怖さを質問に沿って書きます。</p>
+          </article>
+          <article class="voice">
+            <strong>VOICE 02</strong>
+            <h3>こちらが読む</h3>
+            <p>止めている声を敵にせず、何を守ろうとしているのかをカードと文章から読みます。</p>
+          </article>
+          <article class="voice">
+            <strong>VOICE 03</strong>
+            <h3>文章で往復する</h3>
+            <p>届いたノートに一度だけ返事を書き、違和感も含めて最後の一手を整えます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>48時間以内に届くもの</h2>
+        <div class="deliver-grid">
+          <article class="deliver">
+            <strong>01</strong>
+            <h3>あなただけの交換ノート</h3>
+            <p>本当の願い、止めている声、守っているもの、次の一手を3〜4ページにまとめます。</p>
+          </article>
+          <article class="deliver">
+            <strong>02</strong>
+            <h3>最後の短い手紙</h3>
+            <p>最初のノートを読んだ感想や違和感を受け取り、もう一度言葉を整えて返します。</p>
+          </article>
+          <article class="deliver">
+            <strong>03</strong>
+            <h3>7日間ワークブック</h3>
+            <p>「どうせ無理」の声を、自分の外へ出して読み直すPDFをお渡しします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-band">
+      <div class="wrap offer-layout">
+        <div class="price-panel">
+          <div class="price-label">最初の2名・感想モニター</div>
+          <div class="price">8,800<small>円</small></div>
+          <p class="muted">表示価格が支払総額です。納品後、匿名での感想掲載可否をお聞きします。掲載は許可をいただいた場合だけです。</p>
+        </div>
+        <div class="capacity-panel">
+          <h2>今回の募集</h2>
+          <div class="capacity-list">
+            <div class="capacity-row"><span>最初の2枠</span><span>8,800円</span></div>
+            <div class="capacity-row"><span>次の7枠</span><span>13,200円</span></div>
+            <div class="capacity-row"><span>受付</span><span>合計9枠</span></div>
+          </div>
+          <p class="note">9枠は、すべての文章を個別に読み、無理なく届けられる今回の上限です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>申し込みから受け取りまで</h2>
+        <div class="flow">
+          <div class="flow-step"><h3>DM</h3><p>「交換ノート」と送ってください。</p></div>
+          <div class="flow-step"><h3>振込と質問</h3><p>条件を確認して振込後、8つの質問に文章で答えます。</p></div>
+          <div class="flow-step"><h3>48時間以内</h3><p>個別ノートと7日間PDFをお送りします。</p></div>
+          <div class="flow-step"><h3>最後の一往復</h3><p>感想や違和感を一度返し、短い手紙を受け取ります。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-band">
+      <div class="wrap fit-grid">
+        <div>
+          <h2>こんなときに</h2>
+          <ul class="fit-list">
+            <li>叶えたいことはあるのに、動こうとすると怖くなる</li>
+            <li>同じ迷いを何度も繰り返している</li>
+            <li>占いは好きだけれど、未来を決めつけられたくない</li>
+            <li>顔を出したり、うまく話したりせずに相談したい</li>
+            <li>焦りではなく、自分の言葉で次の一手を選びたい</li>
+          </ul>
+        </div>
+        <div>
+          <h2>扱わないこと</h2>
+          <ul class="fit-list">
+            <li>未来、収入、復縁、合否などの保証</li>
+            <li>医療、心理診断、法律、投資に関する判断</li>
+            <li>相談者の代わりに重大な決断をすること</li>
+            <li>不安を煽って継続購入を迫ること</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="apply">
+      <div class="wrap apply-layout">
+        <div>
+          <h2>自分の中で割れている声を、いちど紙の上で会わせる。</h2>
+          <p>Instagram、Threads、X、noteなど、見かけた場所のDMでお申し込みください。</p>
+          <div class="keyword">DMキーワード：交換ノート</div>
+        </div>
+        <div>
+          <button class="button" type="button" id="copy-message">DM文をコピーする</button>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
+          <p class="note">コピーされる文：交換ノート鑑定について詳しく知りたいです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>お申し込み前の確認</h2>
+        <p class="muted">このサービスは、対話、カード、ジャーナリングを使った自己理解の時間です。効果や願望の実現を保証するものではありません。強い苦痛や危機がある場合は、医療機関や専門の相談窓口を優先してください。</p>
+
+        <details id="legal">
+          <summary>特定商取引法に基づく表記・キャンセル条件</summary>
+          <dl class="legal-grid">
+            <dt>役務提供事業者</dt>
+            <dd>請求があった場合、申込みの意思決定前に遅滞なく開示します。</dd>
+            <dt>住所・電話番号</dt>
+            <dd>請求があった場合、申込みの意思決定前に遅滞なく開示します。</dd>
+            <dt>価格</dt>
+            <dd>感想モニター8,800円、通常13,200円。表示価格が支払総額です。</dd>
+            <dt>追加費用</dt>
+            <dd>銀行振込手数料、質問や納品物を送受信するための通信費は申込者負担です。</dd>
+            <dt>支払方法・時期</dt>
+            <dd>銀行振込による前払い。案内後2日以内にお支払いください。</dd>
+            <dt>提供時期</dt>
+            <dd>事前質問の回答受領後48時間以内に、個別ノートとPDFを送付します。返信受領後48時間以内に最後の短い手紙を送付します。</dd>
+            <dt>キャンセル</dt>
+            <dd>事前質問の回答前に連絡があった場合は、振込手数料を除いて返金します。回答受領後は個別制作を開始するため、申込者都合の返金は受け付けません。提供者都合で納品できない場合は全額返金します。</dd>
+            <dt>連絡方法</dt>
+            <dd>申込み時に使用したSNSのDMで受け付けます。</dd>
+          </dl>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">願いの詰まりをほどく 交換ノート鑑定 / 人生編集</div>
+  </footer>
+
+  <a class="mobile-cta" href="#apply">DMで「交換ノート」</a>
+
+  <script>
+    const copyButton = document.querySelector("#copy-message");
+    const copyStatus = document.querySelector("#copy-status");
+    const message = "交換ノート鑑定について詳しく知りたいです。";
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(message);
+        copyStatus.textContent = "DM文をコピーしました。";
+      } catch (error) {
+        copyStatus.textContent = `DMで「${message}」と送ってください。`;
+      }
+    });
+  </script>
+</body>
+</html>
