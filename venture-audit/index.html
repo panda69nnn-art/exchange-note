@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>72時間・事業解剖レポート | 外からだから、見えることがある。</title>
+  <meta name="description" content="公開情報から、伝わっていない価値・事業の矛盾・次の30日で試す打ち手を構造化する、経営者向けの事業解剖レポート。">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --paper:#f3f0e8; --ink:#171915; --sub:#5e6259; --line:#cfcbbf;
+      --acid:#d9ff43; --night:#172119; --white:#fffef8; --orange:#ff6a3d;
+      --shadow:0 24px 70px rgba(23,25,21,.12);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;letter-spacing:.01em}
+    a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .hero{min-height:94vh;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:after{content:"";position:absolute;width:46vw;height:46vw;right:-10vw;top:-12vw;border-radius:50%;background:var(--acid);filter:blur(1px);opacity:.85}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end;padding:90px 0}
+    .tag{display:inline-block;padding:8px 12px;border:1px solid var(--ink);border-radius:999px;font-size:12px;font-weight:850;letter-spacing:.08em}
+    h1,h2,h3,p{overflow-wrap:anywhere} h1{margin:26px 0 24px;font-size:clamp(50px,7.2vw,104px);line-height:.98;letter-spacing:-.055em;font-weight:950}
+    h1 span{display:block;font-size:.42em;line-height:1.35;letter-spacing:0;margin-top:18px}
+    .lead{max-width:700px;font-size:clamp(18px,2.1vw,24px);line-height:1.85;font-weight:650}
+    .hero-card{padding:28px;background:var(--night);color:var(--white);box-shadow:var(--shadow);transform:rotate(1.8deg)}
+    .hero-card strong{display:block;color:var(--acid);font-size:46px;line-height:1;margin:14px 0}
+    .hero-card p{line-height:1.8}.button{display:inline-flex;justify-content:center;align-items:center;min-height:54px;margin-top:26px;padding:14px 20px;background:var(--acid);color:var(--ink);border:1px solid var(--ink);text-decoration:none;font-weight:900;box-shadow:5px 5px 0 var(--ink);transition:.18s}
+    .button:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+    section{padding:96px 0;border-bottom:1px solid var(--line)} h2{max-width:900px;margin:0 0 26px;font-size:clamp(34px,5vw,68px);line-height:1.1;letter-spacing:-.04em}
+    .intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.intro p,.body-copy{font-size:18px;line-height:2;color:var(--sub)}
+    .dark{background:var(--night);color:var(--white)}.dark h2 em{color:var(--acid);font-style:normal}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}.card{min-height:210px;padding:25px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.045)}
+    .card b{display:block;color:var(--acid);font-size:13px;letter-spacing:.1em;margin-bottom:20px}.card p{line-height:1.75;color:rgba(255,255,255,.78)}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}.step{padding:24px;border-top:4px solid var(--ink);background:var(--white)}.step strong{font-size:40px}.step h3{margin:16px 0 8px}.step p{color:var(--sub);line-height:1.7}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:20px}.fact{padding:32px;border:1px solid var(--line);background:var(--white)}.fact strong{display:block;font-size:32px;margin-bottom:10px}.fact p{color:var(--sub);line-height:1.8}
+    .offer{background:var(--acid)}.offer-box{display:grid;grid-template-columns:1fr .8fr;gap:55px;align-items:end}.price{font-size:clamp(54px,7vw,92px);font-weight:950;letter-spacing:-.05em}.price small{font-size:16px;letter-spacing:0}.offer ul{padding-left:1.25em;line-height:2}.note{font-size:13px;line-height:1.75;color:#4e523f}
+    footer{padding:35px 0;background:var(--ink);color:rgba(255,255,255,.65);font-size:12px}
+    .reveal{opacity:0;transform:translateY(18px);transition:.6s}.reveal.on{opacity:1;transform:none}
+    @media(max-width:760px){.hero-grid,.intro,.offer-box,.facts{grid-template-columns:1fr}.hero-grid{padding:60px 0}.hero-card{transform:none}.grid{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}section{padding:68px 0}}
+    @media(max-width:440px){.process{grid-template-columns:1fr}.wrap{width:min(100% - 28px,1120px)}h1{font-size:48px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">PUBLIC INFORMATION × OUTSIDE INTELLIGENCE</span>
+        <h1>外からだから、<br>見えることがある。<span>72時間・事業解剖レポート</span></h1>
+        <p class="lead">会社の中では当たり前になり、もう見えなくなった価値と矛盾を、公開情報だけから読み直す。読むためではなく、次の一手を決めるための外部視点です。</p>
+        <a class="button" href="#apply">実験枠の内容を見る</a>
+      </div>
+      <aside class="hero-card">
+        <p>2026年7月26日まで</p>
+        <strong>2社限定</strong>
+        <p>入金・必要情報の受領後<br>72時間以内に納品</p>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap intro reveal">
+        <h2>情報がないのではなく、<br>意味がつながっていない。</h2>
+        <div>
+          <p>良い技術がある。思想もある。発信も続けている。それでも、初めて来た人には他社との違いが伝わらない。</p>
+          <p>長く内側にいるほど、顧客がどの言葉で立ち止まり、どこで迷うかは見えにくくなります。このレポートは、公式サイト・採用・SNS・記事・プレスリリース・競合などを横断し、散らばった事実をひとつの構造へ戻します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap reveal">
+        <h2>納品するのは、感想ではなく<br><em>意思決定の材料。</em></h2>
+        <div class="grid">
+          <article class="card"><b>01 / VALUE</b><h3>本当に買われている価値</h3><p>商品の機能の奥で、顧客がどんな変化にお金を払っているのかを仮説化します。</p></article>
+          <article class="card"><b>02 / FRICTION</b><h3>伝達を止めている矛盾</h3><p>商品、トップページ、発信、導線の言葉がどこですれ違っているかを示します。</p></article>
+          <article class="card"><b>03 / SPACE</b><h3>競合の間にある空白</h3><p>比較表を作るだけでなく、まだ誰も強く名乗っていない場所を探します。</p></article>
+          <article class="card"><b>04 / POSITION</b><h3>事業を一文で言い直す</h3><p>誰の、どんな変化を、なぜこの会社が作れるのか。入口の言葉を再設計します。</p></article>
+          <article class="card"><b>05 / EXPERIMENT</b><h3>30日で試せる企画3本</h3><p>大規模な改修ではなく、仮説を検証できる小さな施策と見る数字を設計します。</p></article>
+          <article class="card"><b>06 / WORDS</b><h3>そのまま使える言葉</h3><p>LPのファーストビュー、営業文または投稿案まで具体的な形へ落とします。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap reveal">
+        <h2>72時間の進め方</h2>
+        <div class="process">
+          <article class="step"><strong>1</strong><h3>無料ミニ解剖</h3><p>依頼前に、公開情報から見えた観察を1ページだけお渡しします。</p></article>
+          <article class="step"><strong>2</strong><h3>申込・入金</h3><p>視点に価値を感じた場合だけ、完全版へ進んでください。</p></article>
+          <article class="step"><strong>3</strong><h3>横断調査</h3><p>事実・推論・提案を混ぜず、複数の接点と競合を読みます。</p></article>
+          <article class="step"><strong>4</strong><h3>納品・1往復</h3><p>15〜25ページ目安。納品後7日以内の文章質問に回答します。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap facts reveal">
+        <article class="fact"><strong>しないこと</strong><p>売上の保証、未来の断定、根拠のない競合批判、社内事情を知っているふり。公開情報で確かめられないことは、必ず仮説と記します。</p></article>
+        <article class="fact"><strong>向いている会社</strong><p>新商品・新サービスを出した直後。技術や思想はあるのに一言で違いが伝わらない。長期コンサルの前に、濃い第三者視点がほしい会社。</p></article>
+      </div>
+    </section>
+
+    <section class="offer" id="apply">
+      <div class="wrap offer-box reveal">
+        <div>
+          <span class="tag">FIRST TWO COMPANIES</span>
+          <h2>72時間・<br>事業解剖レポート</h2>
+          <div class="price">110,000<small>円（税込）</small></div>
+          <p class="note">2026年7月26日までの申込・入金分、2社限定。入金確認と必要情報受領から72時間以内に納品します。</p>
+        </div>
+        <div>
+          <ul>
+            <li>15〜25ページ目安のPDF</li>
+            <li>競合・ポジショニング分析</li>
+            <li>30日間の検証企画3本</li>
+            <li>LP・営業文または投稿案</li>
+            <li>納品後、文章で質問1往復</li>
+          </ul>
+          <p><strong>このページをご案内したメールへ「ミニ解剖希望」とご返信ください。</strong></p>
+          <p class="note">無料ミニ解剖をご覧いただいてから、依頼するか判断できます。返信後に繰り返し営業することはありません。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© 2026 Roku-chan / 72時間・事業解剖レポート</div></footer>
+  <script>
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
